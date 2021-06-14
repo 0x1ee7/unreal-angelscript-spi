@@ -27,7 +27,7 @@ class AEnemyMovement: UActorComponent{
         return Direction * Speed;
     }
 
-}
+};
 
 class ASpaceActorBase: APawn
 {
