@@ -75,9 +75,9 @@ class SpaceGameMode: AGameModeBase
     FUpdateScoreEvent ScoreEvent;
     APlayerController Player;
 
-	UFUNCTION(BlueprintOverride)
-	void BeginPlay()
-	{
+    UFUNCTION(BlueprintOverride)
+    void BeginPlay()
+    {
         Player = Gameplay::GetPlayerController(0);
         WidgetBlueprint::SetInputMode_GameOnly(Player);
         HudWidget = Cast<UHudWidget>(WidgetBlueprint::CreateWidget(Hud, Player));

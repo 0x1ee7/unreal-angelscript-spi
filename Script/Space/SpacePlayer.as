@@ -40,8 +40,8 @@ class SpacePlayerCharacter: ASpaceActorBase
     }
 
     UFUNCTION(BlueprintOverride)
-	void Tick(float DeltaSeconds)
-	{
+    void Tick(float DeltaSeconds)
+    {
         VDeltaSeconds = DeltaSeconds;
         FRotator rotation = GetActorRotation();
         FRotator TargetRotator(0.f,  HorizontalSpeed * -10.f, 0.f);

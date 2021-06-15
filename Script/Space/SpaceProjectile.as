@@ -18,17 +18,17 @@ class ASpaceProjectileBase: AActor
     float Speed = 1000.f;
 
     UPROPERTY(DefaultComponent, RootComponent)
-	UStaticMeshComponent Mesh;
-	default Mesh.bReturnMaterialOnMove = true;
-	default Mesh.bTraceComplexOnMove = true;
-	default Mesh.bCanEverAffectNavigation = false;
-	default Mesh.CollisionProfileName = n"BlockAll";
+    UStaticMeshComponent Mesh;
+    default Mesh.bReturnMaterialOnMove = true;
+    default Mesh.bTraceComplexOnMove = true;
+    default Mesh.bCanEverAffectNavigation = false;
+    default Mesh.CollisionProfileName = n"BlockAll";
 
 
     default Mesh.EnableGravity = false;
 
 
-	UPROPERTY(DefaultComponent)
+    UPROPERTY(DefaultComponent)
     UProjectileMovementComponent ProjectileMovement;
 
 
@@ -55,7 +55,7 @@ class ASpaceProjectileBase: AActor
         AController controller;
         UClass cls;
         float Damage = 100.f;
-		Gameplay::ApplyDamage(OtherActor, Damage, controller, this, cls);
+        Gameplay::ApplyDamage(OtherActor, Damage, controller, this, cls);
 
     }
 

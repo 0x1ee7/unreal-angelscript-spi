@@ -28,8 +28,8 @@ class SpaceEnemy: ASpaceActorBase
     }
 
     UFUNCTION(BlueprintOverride)
-	void Tick(float DeltaSeconds)
-	{
+    void Tick(float DeltaSeconds)
+    {
         HorizontalSpeed = Movement.Velocity();
 
         APawn player = Gameplay::GetPlayerPawn(0);
